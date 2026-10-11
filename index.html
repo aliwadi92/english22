@@ -1,0 +1,189 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Ali Wadi">
+    <meta name="description" content="English Level One Quiz created by Ali Wadi">
+
+    <title>English Level One Quiz | Ali Wadi</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app">
+
+        <!-- Welcome Screen -->
+        <section id="welcome-screen" class="screen welcome-screen">
+            <div class="logo">AW</div>
+
+            <p class="eyebrow">ENGLISH PRACTICE</p>
+
+            <h1>English Level One Quiz</h1>
+
+            <p class="description">
+                Test your English skills with 100 questions!
+            </p>
+
+            <div class="quiz-info">
+                <div>
+                    <strong>100</strong>
+                    <span>Questions</span>
+                </div>
+
+                <div>
+                    <strong>4</strong>
+                    <span>Question Types</span>
+                </div>
+
+                <div>
+                    <strong>A1</strong>
+                    <span>Level One</span>
+                </div>
+            </div>
+
+            <button id="start-btn" class="primary-btn">
+                START QUIZ →
+            </button>
+
+            <p class="copyright">Created with ♥ by Ali Wadi</p>
+        </section>
+
+
+        <!-- Player Name Screen -->
+        <section id="name-screen" class="screen hidden">
+            <div class="screen-icon">👋</div>
+
+            <h2>Welcome!</h2>
+
+            <p class="description">
+                Enter your name before starting the quiz.
+            </p>
+
+            <form id="name-form">
+                <label for="player-name">Your name</label>
+
+                <input
+                    id="player-name"
+                    type="text"
+                    placeholder="Enter your name"
+                    maxlength="40"
+                    autocomplete="off"
+                    required
+                >
+
+                <p id="name-error" class="error-message"></p>
+
+                <button type="submit" class="primary-btn">
+                    LET'S START →
+                </button>
+            </form>
+
+            <button id="back-btn" class="text-btn">
+                ← Back
+            </button>
+        </section>
+
+
+        <!-- Quiz Screen -->
+        <section id="quiz-screen" class="screen hidden">
+
+            <header class="quiz-header">
+                <div>
+                    <span class="small-label">PLAYER</span>
+                    <strong id="display-player-name"></strong>
+                </div>
+
+                <div class="score-badge">
+                    Score: <span id="current-score">0</span>
+                </div>
+            </header>
+
+            <div class="progress-info">
+                <span id="question-number">Question 1 of 100</span>
+                <span id="progress-percent">1%</span>
+            </div>
+
+            <div class="progress-track">
+                <div id="progress-bar"></div>
+            </div>
+
+            <div class="question-card">
+                <span id="question-category" class="category-badge">
+                    GRAMMAR
+                </span>
+
+                <h2 id="question-text"></h2>
+
+                <p id="question-instruction" class="question-instruction"></p>
+
+                <div id="answer-area"></div>
+
+                <div id="feedback" class="feedback hidden" aria-live="polite"></div>
+            </div>
+
+            <button id="next-btn" class="primary-btn hidden">
+                NEXT QUESTION →
+            </button>
+
+            <p class="copyright">English Level One Quiz | Ali Wadi</p>
+        </section>
+
+
+        <!-- Results Screen -->
+        <section id="result-screen" class="screen hidden">
+
+            <div class="result-icon">🏆</div>
+
+            <p class="eyebrow">QUIZ COMPLETED</p>
+
+            <h1>Great Work!</h1>
+
+            <p id="result-name" class="description"></p>
+
+            <div class="final-score-card">
+                <span>YOUR SCORE</span>
+                <strong id="final-score">0%</strong>
+                <p id="correct-count">0 / 100 correct answers</p>
+            </div>
+
+            <div class="result-stats">
+                <div class="stat-card">
+                    <span class="stat-number correct-number" id="correct-total">0</span>
+                    <span>Correct</span>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-number wrong-number" id="wrong-total">0</span>
+                    <span>Incorrect</span>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-number" id="total-answered">100</span>
+                    <span>Total</span>
+                </div>
+            </div>
+
+            <p id="result-message" class="result-message"></p>
+
+            <button id="restart-btn" class="primary-btn">
+                TRY AGAIN ↻
+            </button>
+
+            <p class="copyright">© 2026 Ali Wadi | All Rights Reserved</p>
+        </section>
+
+    </main>
+
+    <footer class="page-footer">
+        English Level One Quiz · Created by Ali Wadi
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
